@@ -1,32 +1,32 @@
-*{
-    margin: 0;
-    padding:0;
-}
+
+
 body{
     background-color: black;
     color: white;   
     font-family: Roboto;
+
    
 }
+.container{
+    margin: 0 auto;
+    max-width: 81rem;
+}
+
 /* ------------ nav bar part ------- */
 nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-  
+    align-items: center;    
 }
-.list-items{
+nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
     gap: 90px;  
-    margin: 40px 90px 0px 0px ;
-
+    margin-top: 40px ;
 }
-nav .logo{
+nav div:first-child{
     margin: 40px 0 0 90px;
 }
-
 /* --------hero part ----------- */
 .hero{
  display: flex;
@@ -36,9 +36,9 @@ nav .logo{
  
 }
 .hero img{
-    width: 80%;
+    width: 600px;
     position: relative;
-    left: 100px;
+    left: 0px;
     bottom: 10px;
 }
 .hero h4{
@@ -55,7 +55,7 @@ nav .logo{
     color: rgba(255, 255, 255, 0.578);
    
 }
-.btn-about{
+.hero .btn-about{
     background-color:rgb(189, 37, 37) ;
     font-size: 20px;
     padding: 10px 40px;
@@ -63,38 +63,32 @@ nav .logo{
     margin-top: 30px;
 
 }
-/* -------- main part---------- */
-.main{
-    margin: 0px 150px;
-  
- }
- 
+
 /* ----------- box part --------- */
 .box{
     background-color: rgba(35, 35, 35, 0.671);
     width: 600px;
-    height: 800px;
+    height: 850px;
     position: absolute;
-    top: 775px; 
+    left: 0;
+    top: 690px; 
     z-index: -1;
      
 }
- 
 /* ----------- cards -----------*/
-.cards{
+.course-part .cards{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 40px;
    
 }
-
-
-.card{
+ .card{
     background-color: rgb(44, 44, 44);
     width: 300px;
     height: 300px;
     margin-top: 50px;
-    padding: 40px 0px 0px 40px ;   
-}
+    padding: 40px 0px 0px 40px ; 
+ }
 .card img{
     width: 50px;
 }
@@ -114,25 +108,25 @@ nav .logo{
     margin-top: 20px;
     color:  rgb(244, 73, 73);
  }
-.card-active h4{
-    color: white;
- }
-.card-active{
+.course-part .cards div:nth-child(2) {
     background-color:brown;
+}
+.course-part .cards div:nth-child(2) h4{
+    color: #fff;
 }
 /* -------------servey part-------- */
 .servey-part{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 100px;
     margin-top: 100px;
-    align-items: center;
-
-   
+    align-items: center;  
 }
-.servey-part-left h1 {
+.servey-part-left  h1 {
     font-size: 100px;
     font-weight: 900;
     color: rgb(244, 73, 73) ;
+    
 }
 .servey-part-left h4{
     font-size: 25px;
@@ -140,28 +134,31 @@ nav .logo{
 }
 .servey-cards{
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    justify-content: center;
+    gap: 40px;
     flex-wrap: wrap;
    max-width: 700px;
    margin-right: 100px;
+  
+   align-content: center;
 }
 .servey-card{
-    background-color: rgb(45, 42, 42);
-    width: 250px;
-    height: 90px;
-    
+    background-color: rgb(27, 26, 26);
+    width: 290px;
+    height: 120px;  
 }
 .servey-card h1{
-    margin-top: 10px;
-    margin-left: 50px;
-    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 90px;
+    font-size: 55px;
     font-weight: 900;
     color:  rgb(244, 73, 73);
+    line-height: 0;
+    
 }
 .servey-card h5{
-    margin-left: 50px;
-    font-size: 17px;
+    margin-left: 90px;
+    font-size: 19px;
     font-weight: 300;
 }
 /* ---------- projects part--------- */
@@ -169,16 +166,18 @@ nav .logo{
     margin-top: 100PX;
 }
 
-.projects-part-1{
+.projects-heading{
     display: flex ;
     justify-content: space-between;
-    align-items: CENTER;
+    align-items: center;
+   
+   
 }
-.projects-part-1 h1{
+.projects-heading h1{
     font-size: 25px;
     font-weight: 900;
 }
-.projects-part-1 button{
+.projects-heading button{
     background-color:rgb(244, 73, 73) ;
     border: none;
     padding: 10px 40px;
@@ -187,32 +186,38 @@ nav .logo{
 }
 .project-cards{
     display: flex; 
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
     flex-wrap: wrap;
     margin-top: 50px;
 } 
 
-.project-cards img{
-    width: 400px;
-    margin-left: 20px;
+.project-card img{
+    width: 580px;
+    margin-left: 23px;
     margin-top: 20px;
+    
 }
 .project-card{
-    background-color:  rgb(45, 45, 45);
-    height: 270px;
-    width: 450px;
+    background-color: rgb(28, 26, 26);
+    height: 370px;
+    width: 39rem;
+    margin-top: 50px;
+    
 }
 .project-cards div:nth-child(3) img{
- width: 400px;   
- height: 235px;
+ width: 36.5rem;   
+ height: 330px;
 }
 div .project-cards h1{
-    margin-top: 35px;
+    margin-top: 45px;
     font-size: 25px;
+    line-height: 0;
 }
 div .project-cards h5{
     color: rgb(244, 73, 73);
     font-size: 17px;
+    line-height: 0;
 }
 /* -----------contact part---------- */
 .contact-part{
@@ -221,7 +226,7 @@ div .project-cards h5{
     margin-top: 200px;
     background-color: rgb(32, 30, 30);
     height: 270px;
-    width: 1170px;
+    width: auto;
     
 }
 .contact-part h1{
@@ -243,30 +248,141 @@ div .project-cards h5{
 }
 .bottom-list{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     list-style: none;
-    margin: 40px 300px ;
+    margin: 40px 0px;
+    gap: 80px;
 }
 /* ----------footer prt ----------- */
-.footer-logos{
+.footer{
     background-color: rgb(35, 33, 33);
-    height: 100px;
+    position: absolute;
+    left: 0px;
+    right: 0px; 
      
 }
-.social-logos img{
+.social-icons img{
     width: 35px;
-    align-items: center;
     background-color: #fff;
     border-radius: 13px;
-    position: relative;
-    bottom: 20px;
-    left: 40rem;
     margin-right: 40px;  
-
 }
-.footer-logos div:nth-child(1) img:nth-child(1){
+.social-icons{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -25px;
+  left: 0px;
+}
+.footer .footer-logo{
     width: 120px;
     position: relative;
     left: 150px;
     top: 20px;
+}
+
+@media only screen and (max-width: 1303px){
+    .project-card img{
+        width: 400px;
+        margin-left: 23px;
+        margin-top: 20px;
+        
+    }
+    .project-card{
+        background-color: rgb(28, 26, 26);
+        height: 260px;
+        width: 28rem;
+    }
+    .project-cards div:nth-child(3) img{
+        width: 36.5rem;   
+        height: 330px;
+       }
+       .project-cards div:nth-child(3) img{
+        width: 25.5rem;   
+        height: 230px;
+       }
+}
+@media only screen and (max-width: 1017px){
+    .hero h4{
+        font-size: 20px;
+        font-weight: 500;
+        color: rgb(244, 73, 73);
+         }
+    .hero h1{
+        font-size: 60px;
+       line-height: 100px;
+       }
+    .hero p{
+        font-size: 17px;
+        color: rgba(255, 255, 255, 0.578);
+          }
+}
+@media only screen and (max-width: 840px){
+
+    nav ul{
+        gap: 20px;  
+    }
+    .hero{
+       flex-direction: column;
+        }
+    .hero img{
+            width: 550px; 
+            margin: 0;    
+        }  
+    .course-part .cards{
+           flex-direction: column;
+            align-items: center;       
+        }  
+    .servey-part{
+            flex-direction: column;   
+            align-items: center; 
+            align-content: center; 
+        }
+    .servey-cards{
+           flex-direction: column;
+            flex-wrap: wrap;
+           max-width: 0;
+          align-items: center;
+        }
+    .contact-part{
+           flex-direction: column;           
+         }
+    .contact-part h1{
+            font-size: 30px;
+            margin: 40px 0 0 40px;
+        }    
+    .contact-part p{
+            font-size: 15px;   
+        }
+     .contact-part button{   
+            margin: 0px auto;   
+        }
+    .social-icons {
+              left: 70px; 
+          }
+    .box{
+            top: 640px;
+            width: 500px;
+            height: 800px;    
+        }
+    .bottom-list{
+          gap: 30px;
+        }
+    nav div:first-child{
+            margin: 40px 0 0 20px;        
+    }
+                
+.footer .footer-logo img{
+    width: 100px;
+    margin-left: -120px;
+}
+}
+@media only screen and (max-width: 490px){
+        .box{
+            display: none;
+        }
+        .nav-bar img{
+            width: 100px;
+            margin-top: -20px;
+        }
 }
