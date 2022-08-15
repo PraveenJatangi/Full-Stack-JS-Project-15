@@ -27,6 +27,9 @@ nav ul {
 nav div:first-child{
     margin: 40px 0 0 90px;
 }
+.drop-menu,.drop-list{
+    display: none;
+}
 /* --------hero part ----------- */
 .hero{
  display: flex;
@@ -385,4 +388,22 @@ div .project-cards h5{
             width: 100px;
             margin-top: -20px;
         }
+        .list-items{
+            display: none;
+        }
+        .drop-menu {
+            display: block; 
+            cursor: pointer; 
+            position: absolute;
+            left: 380px;
+            
+        }
+        .drop-list{
+            display: block;
+            position: absolute;
+            top: 10px;
+            left: 340px;
+        }
+      
+        
 }
