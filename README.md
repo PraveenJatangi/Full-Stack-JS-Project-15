@@ -8,7 +8,7 @@
 
 ![name](https://img.shields.io/badge/name%20-praveen-green)
 
-## Project 15 [Live Link](https://fullstack-js-project-14-praveen.netlify.app/)
+## Project 15 [Live Link](https://fs-js-project-15.netlify.app/)
 
 -   What i learnt in this project
     - css positions,margins,paddings,flex box and adding images to web page. 
